@@ -107,7 +107,7 @@ form label, footer h3{
 
 form input, form button{
     height: 40px;
-    width: 400px;
+    width: 100%;
 }
 
 form input, form textarea{
