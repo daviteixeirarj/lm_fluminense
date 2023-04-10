@@ -87,12 +87,15 @@ footer h3{
 }
 
 #form{
+    width: 90%;
     grid-area: form;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     gap: 1rem;
+
+
 }
 
 .form-item{
