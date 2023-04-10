@@ -1,0 +1,93 @@
+#bg-sec1{
+    margin-top:-100px;
+    background-image: url(../img/bgs/bg\ desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+#home{
+    background-color: rgb(64, 64, 63, 0.65);
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 20vh;
+}
+
+h1{
+    color: #f2f2f2;
+    font-size: 3rem;
+    width: 65vw;
+    padding-left: 2%;
+}
+
+#nichos{
+    position: absolute;
+    top: 230px;
+    right: 5vw;
+
+    height: 75vh;
+    color: var(--cinza-escuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+
+    padding: 1rem 0;
+
+    background-color: rgb(5, 131, 242,0.8);
+    color: #f2f2f2;
+}
+
+#nichos h3{
+    font-size: min(1.2rem, 3vw);
+}
+
+#nichos img{
+    height: 8vh;
+    color: #f2f2f2;
+}
+
+.nicho{
+    width: 250px;
+    text-align: center;
+}
+
+#icobus{
+    scale: 2;
+    color: #f2f2f2;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 810px){
+    #home{
+        padding-top: 30vh;
+
+        flex-direction: column;
+
+    }
+
+    h1{
+        padding-top: 4rem;
+        font-size: max(1.75rem, 5vw);
+    }
+
+    #nichos{
+        flex-direction: row;
+        gap: 1vw;
+
+        width: 100%;
+        height: 150px;
+
+        left: 0;
+        top: calc(100vh - 150px);
+
+        padding-left: .25rem;
+
+        overflow: hidden;
+    }
+}

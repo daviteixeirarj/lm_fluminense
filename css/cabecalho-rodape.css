@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300&display=swap');
+
+h1, h2, h3, h4{
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+:root{
+    --branco: #F2F2F2;
+    --cinza-escuro: #40403F;
+    --azul-clarinho: #BBD3F2;
+    --agua: #91CCD9;
+    --azul1: #0597F2;
+    --azul: #0583F2;
+}
+
+header{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: .5rem 2rem;
+
+    background: rgba(242, 242, 242, .4);
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+    box-shadow: 1px 1px 20px 0px #00000063;
+}
+
+header img{
+    width: 170px;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header nav ul li{
+    padding-left: 0.75rem;
+}
+
+header nav ul li a{
+    padding: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--agua);
+
+    transition: .3s;
+}
+
+header nav ul li a:hover{
+    scale: 1.2;
+    background-color: var(--branco);
+    color: var(--azul);
+}
+
+/*RODAPÉ*/
+footer{
+    background-color: var(--cinza-escuro);
+    padding: .5rem;
+
+    display: grid;
+    grid-template-areas: 
+    'titulo titulo'
+    'form   findus'
+    'jaba   jaba';
+
+    row-gap: 1rem;
+}
+
+footer h3{
+    text-align: center;
+    grid-area: titulo;
+
+}
+
+#form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form{
+    grid-area: form;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.form-item{
+    display: flex;
+    flex-direction: column;
+    gap: .12rem;
+}
+
+form label, footer h3{
+    color: var(--branco);
+}
+
+form input, form button{
+    height: 40px;
+    width: 400px;
+}
+
+form input, form textarea{
+    outline: none;
+}
+
+form input{
+    padding-left: .5rem;
+}
+
+form button{
+    background-color: var(--azul);
+    color: var(--branco);
+    height: 3rem;
+    font-weight: bold;
+
+    transition: .5s;
+}
+
+form button:hover{
+    background-color: var(--branco);
+    color: var(--azul);
+}
+
+#msg{
+    padding: 1rem;
+}
+
+#findus{
+    grid-area: findus;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#findus a{
+    color: var(--branco);
+}
+
+#jaba{
+    grid-area: jaba;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--branco);
+
+    padding: 1rem 0;
+}
+
+#jaba a{
+    color: var(--branco);
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 780px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #findus{
+        gap: 1rem;
+    }
+}

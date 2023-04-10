@@ -1,0 +1,19 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+main{
+    background-color: var(--branco);
+}
+
+#wppico{
+    width: 100px;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

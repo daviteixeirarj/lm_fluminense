@@ -1,0 +1,28 @@
+section#sobre{
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem 0;
+    background-color: var(--branco);
+
+    color: var(--cinza-escuro);
+}
+
+h2{
+    text-align: center;
+    padding: 1rem;
+}
+
+article{
+    padding: 0 1rem 2rem 0;
+}
+
+article p{
+    padding: .5rem 1rem;
+    line-height: 1.75rem;
+}
+
+@media screen and (max-width:1040px){
+    h2{
+        text-align: left;
+    }    
+}
